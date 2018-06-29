@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700&subset=cyrillic");
+body {
+  font-family: "Roboto"; }
+
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  border-bottom: 2px solid #E5E5E5; }
+
+.container {
+  width: 100%;
+  max-width: 1140px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 53px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .header__logo {
+    margin-left: -15px; }
+  .header__search-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 50px;
+    -webkit-box-shadow: 0 0 3px 3px #FBFBFB;
+            box-shadow: 0 0 3px 3px #FBFBFB; }
+
+.search__input {
+  width: 356px;
+  height: 15px;
+  padding: 0px 13px;
+  padding-top: 8px;
+  padding-bottom: 6px;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: 40;
+  color: #E0E0E0; }
+.search__input:-moz-placeholder {
+  font-size: 16px;
+  font-weight: 40;
+  color: #E0E0E0; }
+.search__input::-webkit-input-placeholder {
+  font-size: 16px;
+  font-weight: 40;
+  color: #E0E0E0; }
+.search__btn {
+  width: 60px;
+  height: 30px;
+  border: none;
+  background: url(../img/search_btn.png) no-repeat center center; }
+
+/*# sourceMappingURL=main.css.map */
