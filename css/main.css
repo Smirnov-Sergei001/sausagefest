@@ -65,7 +65,8 @@ body {
   width: 30px;
   height: 10px;
   border: none;
-  margin-top: 9px; }
+  margin-top: auto;
+  margin-bottom: auto }
 .menu__options {
   border: none;
   background-color: white;
