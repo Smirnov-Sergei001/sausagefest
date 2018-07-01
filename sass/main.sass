@@ -1,5 +1,5 @@
 @import "fonts"
-body 
+body
 	font-family: 'Roboto'
 .container-fluid
 	width: 100%
@@ -23,12 +23,12 @@ body
 		margin-left: -15px
 	&__search-wrap
 		display: flex
-		align-items: center		
-		margin-left: 50px	
+		align-items: center
+		margin-left: 50px
 		box-shadow: 0 0 3px 3px #FBFBFB
 
 .search
-	&__input	
+	&__input
 		width: 356px
 		height: 15px
 		padding: 0px 13px
@@ -56,12 +56,12 @@ body
 	display: flex
 .menu
 	&__low
-		background: url(../img/vector.png) no-repeat center 
+		background: url(../img/vector.png) no-repeat center
 		width: 30px
 		height: 10px
 		border: none
-		margin-top: auto;
-		margin-bottom: auto;
+		margin-top: auto
+		margin-bottom: auto
 	&__options
 		border: none
 		background-color: white
@@ -69,10 +69,43 @@ body
 		margin-left: 15px
 		margin-bottom: 10px
 		margin-right: -8px
-	   
-		
-	
-	
-		
-		
-		
+		white-space: nowrap
+
+@mixin header__btn($value)
+	display: block
+	width: $value
+	height: $value
+	border: none
+.header__nav
+	padding-left: 19px
+	ul
+		display: flex
+		margin-left: 5px
+		li
+			list-style-type: none
+			margin-left: 12px
+		li:nth-child(2)
+			margin-left: 32px
+.nav
+	&__add
+		background: url(../img/add.png)
+		@include header__btn(34px)
+	&__menu
+		background: url(../img/menu.png)
+		@include header__btn(33px)
+	&__bag
+		background: url(../img/bag.png)
+		@include header__btn(33px)
+	&__client
+		position: relative
+		background: url(../img/client.png)
+		@include header__btn(37px)
+		span
+			display: block
+			width: 9px
+			height: 9px
+			background-color: #F24B4B
+			border-radius: 50%
+			position: absolute
+			top: 1px
+			right: 1px
