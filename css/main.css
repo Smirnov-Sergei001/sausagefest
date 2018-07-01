@@ -19,16 +19,25 @@ body {
   margin-left: auto; }
 
 .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 53px;
-  align-items: center; }
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
   .header__logo {
     margin-left: -15px; }
   .header__search-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-left: 50px;
-    box-shadow: 0 0 3px 3px #FBFBFB; }
+    -webkit-box-shadow: 0 0 3px 3px #FBFBFB;
+            box-shadow: 0 0 3px 3px #FBFBFB; }
 
 .search__input {
   width: 356px;
@@ -66,13 +75,62 @@ body {
   height: 10px;
   border: none;
   margin-top: auto;
-  margin-bottom: auto }
+  margin-bottom: auto; }
 .menu__options {
   border: none;
   background-color: white;
   font-size: 14px;
   margin-left: 15px;
   margin-bottom: 10px;
-  margin-right: -8px; }
+  margin-right: -8px;
+  white-space: nowrap; }
+
+.header__nav {
+  padding-left: 19px; }
+  .header__nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 5px; }
+    .header__nav ul li {
+      list-style-type: none;
+      margin-left: 12px; }
+    .header__nav ul li:nth-child(2) {
+      margin-left: 32px; }
+
+.nav__add {
+  background: url(../img/add.png);
+  display: block;
+  width: 34px;
+  height: 34px;
+  border: none; }
+.nav__menu {
+  background: url(../img/menu.png);
+  display: block;
+  width: 33px;
+  height: 33px;
+  border: none; }
+.nav__bag {
+  background: url(../img/bag.png);
+  display: block;
+  width: 33px;
+  height: 33px;
+  border: none; }
+.nav__client {
+  position: relative;
+  background: url(../img/client.png);
+  display: block;
+  width: 37px;
+  height: 37px;
+  border: none; }
+  .nav__client span {
+    display: block;
+    width: 9px;
+    height: 9px;
+    background-color: #F24B4B;
+    border-radius: 50%;
+    position: absolute;
+    top: 1px;
+    right: 1px; }
 
 /*# sourceMappingURL=main.css.map */
